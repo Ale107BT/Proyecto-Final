@@ -11,13 +11,6 @@ Este es un mini-proyecto de una **calculadora web** desarrollada con **HTML, CSS
 3. [🛠️ Funcionalidades](#️-funcionalidades)
 4. [🤖 Rol de GitHub Copilot](#-rol-de-github-copilot)
 5. [🧪 Análisis Estático con ESLint](#-análisis-estático-con-eslint)
-6. [📊 Comparación: antes y después](#-comparación-antes-y-después)
-7. [🖼️ Capturas](#️-capturas)
-8. [🔧 Instalación y uso](#-instalación-y-uso)
-9. [🧪 Ejemplo en vivo](#-ejemplo-en-vivo)
-10. [🧠 Reflexión final](#-reflexión-final)
-11. [👨‍💻 Autor](#-autor)
-12. [📄 Licencia](#-licencia)
 
 ---
 
