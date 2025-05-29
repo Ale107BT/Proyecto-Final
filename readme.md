@@ -1,15 +1,32 @@
-# 🧮 Calculadora Web con Asistencia de IA
+# 🧮 Calculadora Web con Asistencia de IA (GitHub Copilot)
 
-Este es un mini-proyecto de una **calculadora web básica** desarrollada con **HTML, CSS y JavaScript**, utilizando **GitHub Copilot** como herramienta de asistencia para mejorar y generar código de forma eficiente.
+Este es un mini-proyecto de una **calculadora web** desarrollada con **HTML, CSS y JavaScript**, asistida por **GitHub Copilot** y mejorada mediante **análisis estático con ESLint**.
 
-## 📌 Objetivo
+---
 
-El propósito de este proyecto es:
+## 📑 Tabla de contenido
 
-- Utilizar inteligencia artificial (GitHub Copilot) para asistir en el desarrollo de software.
-- Comparar código generado manualmente con el código sugerido por IA.
+1. [🎯 Objetivo](#-objetivo)
+2. [🚀 Tecnologías utilizadas](#-tecnologías-utilizadas)
+3. [🛠️ Funcionalidades](#️-funcionalidades)
+4. [🤖 Rol de GitHub Copilot](#-rol-de-github-copilot)
+5. [🧪 Análisis Estático con ESLint](#-análisis-estático-con-eslint)
+6. [📊 Comparación: antes y después](#-comparación-antes-y-después)
+7. [🖼️ Capturas](#️-capturas)
+8. [🔧 Instalación y uso](#-instalación-y-uso)
+9. [🧪 Ejemplo en vivo](#-ejemplo-en-vivo)
+10. [🧠 Reflexión final](#-reflexión-final)
+11. [👨‍💻 Autor](#-autor)
+12. [📄 Licencia](#-licencia)
+
+---
+
+## 🎯 Objetivo
+
+- Utilizar inteligencia artificial (GitHub Copilot) como herramienta de asistencia en el desarrollo de software.
+- Comparar código generado manualmente con el sugerido por IA.
 - Aplicar análisis estático para detectar errores y mejorar la calidad del código.
-- Entender el impacto de las herramientas de IA en el flujo de trabajo de desarrollo.
+- Construir un proyecto funcional e intuitivo: una calculadora.
 
 ---
 
@@ -20,34 +37,53 @@ El propósito de este proyecto es:
 - JavaScript (ES6)
 - Git y GitHub
 - GitHub Copilot
-- [Opcional] ESLint para análisis estático
+- ESLint (análisis estático)
 
 ---
 
 ## 🛠️ Funcionalidades
 
-- Interfaz gráfica simple de una calculadora.
-- Operaciones básicas: suma, resta, multiplicación y división.
-- Botón de borrado (`C`) y botón de igual (`=`).
-- Lógica de cálculo desarrollada con ayuda de GitHub Copilot.
-- Código mejorado y documentado usando sugerencias de IA.
+- Calculadora web con interfaz básica.
+- Operaciones: suma, resta, multiplicación y división.
+- Botón de limpiar (`C`) y botón de igual (`=`).
+- Validación de expresiones para evitar errores o código malicioso.
+- Mejora de código con reglas de estilo y seguridad.
 
 ---
 
-## 🧠 Rol de GitHub Copilot
+## 🤖 Rol de GitHub Copilot
 
-Durante el desarrollo, GitHub Copilot fue utilizado para:
+GitHub Copilot fue usado para:
 
-- Sugerir estructura del HTML y estilo básico.
-- Generar automáticamente la lógica de eventos para los botones.
-- Refactorizar la función de cálculo.
-- Proponer nombres de variables y comentarios claros.
-
-Se documentaron los cambios para comparar el código "antes y después" de la asistencia de Copilot.
+- Generar la estructura HTML/CSS inicial.
+- Sugerir funciones de cálculo y eventos de botones.
+- Refactorizar funciones grandes en módulos más pequeños.
+- Nombrar variables y agregar comentarios significativos.
 
 ---
 
+## 🧪 Análisis Estático con ESLint
 
+Se usó **ESLint** para analizar y mejorar el código JavaScript.
 
+### Configuración básica `.eslintrc.json`:
 
-
+```json
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "eqeqeq": "error",
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  }
+}
